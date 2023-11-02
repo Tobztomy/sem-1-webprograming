@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+h1 {
+font-size : 30px;
+color : green;
+font-weight : bold;
+text-decoration : underline;
+}
+</style>
+</head>
+<body>
+
+<h1>current Date</h1>
+
+
+<button onclick="myFunction()">Print</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+}
+</script>
+
+</body>
+</html>
