@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Change bg color</title>
+    <style>
+        div {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* position: absolute; */
+            justify-content: center;
+            align-items: center;
+        }
+		p{
+		color:white;
+		}
+		
+    </style>
+</head>
+<body>
+    <div>
+        <p id="text">Change the color of background by just clicking on the button</p>
+        <button id="change">set color</button>
+    </div>
+
+    <script>
+        var btn = document.getElementById("change")
+        let allChar = "0123456789ABCDEF"
+        btn.addEventListener("click", change)
+        function change(){
+
+            let randCol = ''
+            for (let i = 0; i < 6; i++) {
+                randCol += allChar[Math.floor(Math.random()*16)]
+            }
+            document.body.style.background = "#" + randCol
+        }
+    </script>
+</body>
+</html>

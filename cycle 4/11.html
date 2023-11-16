@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <title>mouse over</title>
+</head>
+
+<body>
+    <img id="img" name="img"
+        src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg"
+        alt=""
+		height="500px" width="500px">
+    <p id="txt" name="txt">World Cup 2023: Virat Kohli continues to prove why he's one of the all-time greats, says sir Viv Richards
+    </p>
+
+    <script>
+        let img = document.getElementById("img")
+        let txt = document.getElementById("txt")
+
+        img.addEventListener("mouseover", () => {
+            document.img.src = "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202311/world-cup-2023-virat-kohli-hopes-sachin-tendulkars-no-50-wish-comes-true-in-big-semi-finals-and-f-062317606-16x9.jpg?VersionId=mZaawoZ1V6bhqQDbHi4.kejyDDN2pwaf&size=690:388"
+        })
+        img.addEventListener("mouseout", () => {
+            document.img.src = "https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg"
+        })
+
+        txt.addEventListener("mouseover", () => {
+            document.getElementById("txt").innerHTML = "Kohli's highest score in this World Cup was 103 not out, and he continued to show good form throughout the tournament. On November 2nd, 2023, during a match against Sri Lanka, Kohli scored 88 runs, bringing his total World Cup career runs to 1472. This achievement made him one of the leading players in the tournament."
+        })
+        txt.addEventListener("mouseout", () => {
+            document.getElementById("txt").innerHTML = "World Cup 2023: Virat Kohli continues to prove why he's one of the all-time greats, says sir Viv Richards"
+        })
+
+    </script>
+</body>
+
+</html>
